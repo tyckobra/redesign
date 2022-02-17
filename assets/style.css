@@ -1,3 +1,24 @@
+.h1{
+  text-align:center;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color:#a3a3a380;
+  padding: 15px;
+  width: 100%;
+}
+
+.header {
+  background-color:#a3a3a380;
+  padding:15 px;
+  
+}
+
+.body {
+  background-image: url('Kritor.jpg');
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
 .tva {
     font-size:2vw
 }
@@ -6,29 +27,57 @@
   }
   
   .left {
-    background-color: #2196F3;
-    padding: 20px;
+    background-color: #fcff4f80;
+    padding-block: 10px;
     float: left;
     width: 20%; /* The width is 20%, by default */
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
   }
   
   .main {
-    background-color: #f1f1f1;
-    padding: 20px;
+    padding-block: 15px;
     float: left;
     width: 60%; /* The width is 60%, by default */
+    background-color: #a3a3a380;
+    color: #ffffff;
+    font-family:Arial, Helvetica, sans-serif;
   }
-  
+
   .right {
-    background-color: #04AA6D;
-    padding: 20px;
+    background-color: #44e02580;
+    padding-block: 10px;
     float: left;
     width: 20%; /* The width is 20%, by default */
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
   }
   
   /* Use a media query to add a break point at 800px: */
   @media screen and (max-width: 800px) {
     .left, .main, .right {
       width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    padding-block: 1px;
     }
+  }
+
+  .footer {
+    background-color: #777;
+    padding-block: 10px;
+    float: right;
+    text-align: center;
+    color: white;
+  }
+
+  a:link, a:visited {
+    
+    color: white;
+    padding: 15px 45.3px;
+    text-align: center;
+    text-decoration: none;
+    display: padding-block;
+  }
+  
+  a:hover, a:active {
+    background-color: #b1b1b180;
   }
