@@ -1,26 +1,15 @@
 .h1{
   text-align:center;
   font-family:Arial, Helvetica, sans-serif;
+  
+  padding: 15px;
   width: 100%;
 }
 
 .header {
   background-color:#a3a3a380;
-}
-
-.rem {
-  row-gap: 1rem;
-  column-gap: 1rem;
-}
-
-.flex-container-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex-container {
-  display: flex;
+  padding:15 px;
+  
 }
 
 .body {
@@ -30,53 +19,68 @@
   background-size: 100% 100%;
 }
 
+.tva {
+    font-size:2vw
+}
 * {
     box-sizing: border-box;
   }
-
-  .height {
-    height: 100%;
-  }
-
-  .center {
-    display:flex;
-    width: 40%;
-    justify-content: center;
-    flex-grow: 1;
-  }
   
-  .side {
-    background-color: #00ffff36;
-    width: 15%; /* The width is 20%, by default */
-    justify-content: center;
-    font-family:Arial, Helvetica, sans-serif;
-    padding: 2rem;
+  .left {
+    background-color: #5f5f5f;
+    padding: 100px;
+    float: left;
+    width: 20%; /* The width is 20%, by default */
     text-align: center;
-    min-height: 10rem;
+    font-family:Arial, Helvetica, sans-serif;
   }
   
   .main {
-    display: flex;
-    justify-content: center;
+    text-align:center;
+    padding: 15px;
+    float: center;
     width: 100%; /* The width is 60%, by default */
+    background-color: #a3a3a380;
     color: #ffffff;
     font-family:Arial, Helvetica, sans-serif;
   }
 
-
+  .right {
+    background-color: #5f5f5f;
+    padding: 100px;
+    min-height: ;
+    float: right;
+    width: 20%; /* The width is 20%, by default */
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
   /* Use a media query to add a break point at 800px: */
   @media screen and (max-width: 800px) {
-    .left, .main, .right .footer .center{
+    .left, .main, .right .footer {
       width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    padding-block: 1px;
     }
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .flex-item-left {
+    flex: 50%;
+  }
+
+  .flex-item-right {
+    flex: 50%;
   }
 
   .footer {
     background-color: rgb(199, 199, 199);
-    justify-content: center;
+    padding-inline: 10px;
+    text-align: center;
     color: white;
-    padding: 1rem;
-    text-align: cemter;
+    width: 100%
   }
 
   a:link, a:visited {
@@ -85,9 +89,9 @@
     padding: 15px 45.3px;
     text-align: center;
     text-decoration: none;
-    display: flex;
+    display: padding-block;
   }
   
   a:hover, a:active {
-    background-color: #3b3b3b80;
+    background-color: #b1b1b180;
   }
