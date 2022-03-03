@@ -34,6 +34,10 @@
     box-sizing: border-box;
   }
 
+  .maxheight {
+    max-height: 79%;
+  }
+
   .height {
     height: 100%;
   }
@@ -46,13 +50,13 @@
   }
   
   .side {
-    background-color: #00ffff36;
-    width: 15%; /* The width is 20%, by default */
+    background-color: #b1b1b136;
+    width: 14%; /* The width is 20%, by default */
     justify-content: center;
     font-family:Arial, Helvetica, sans-serif;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
-    min-height: 10rem;
+    min-height: 1rem;
   }
   
   .main {
@@ -66,28 +70,34 @@
 
   /* Use a media query to add a break point at 800px: */
   @media screen and (max-width: 800px) {
-    .left, .main, .right .footer .center{
+    .side, .main, .footer, .center{
       width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      font-size: 50%;
     }
   }
 
   .footer {
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(255, 255, 255);
     justify-content: center;
     color: white;
     padding: 1rem;
-    text-align: cemter;
+    text-align: center;
+    max-height: 100px;
+  }
+
+  .bild {
+    max-height: 100px;
   }
 
   a:link, a:visited {
     
-    color: white;
-    padding: 15px 45.3px;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: flex;
   }
   
   a:hover, a:active {
-    background-color: #3b3b3b80;
+    background-color: #8093ff80;
   }
